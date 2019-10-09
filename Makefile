@@ -5,6 +5,9 @@ sample: sample.o
 sample.o: sample.cc
 	c++ -g -O -Weverything -Wno-c++98-compat -c sample.cc
 
+clean:
+	rm -f sample sample.o
+
 test: sample
 	./sample -h test.txt 5
 	./sample -h test.txt 10
