@@ -2,7 +2,6 @@
 
 #include <fstream>
 #include <iostream>
-#include <list>
 #include <random>
 #include <utility>
 #include <vector>
@@ -22,7 +21,6 @@ int main( int argc, char const * argv[] ) {
 	unsigned                 argNext = 1;
 	unsigned                 linesOut;
 	unsigned                 linesIn = 0;
-	std::list<std::string>   lstLines;
 	std::random_device       rd;
 	std::mt19937             mt( rd() );
 	std::string              st;
@@ -88,5 +86,3 @@ int main( int argc, char const * argv[] ) {
 		<< endl;
 	exit( 10 );
 }
-
-
